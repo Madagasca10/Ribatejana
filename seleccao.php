@@ -31,7 +31,7 @@
 	}
 
 	include 'acessoDados.php';
-	$viagens = getVoosPara($destino);
+	$viagens = getViagensPara($destino);
 
 	include 'header.php';
 
@@ -39,7 +39,7 @@
 	<main>
 
 	
-		<h2>Lista de voos de Salvaterra de Magos para 
+		<h2>Lista de viagens de Salvaterra de Magos para 
 		    <?php echo $destino; ?>
 		</h2>
 
@@ -63,7 +63,7 @@
 						<dt>$codigoViagem</dt>
 						<dd>
 						<label>$partida - $chegada</label>
-						<input type="radio" name="codigoVoo" value="$codigoViagem" $checked>
+						<input type="radio" name="codigoViagem" value="$codigoViagem" $checked>
 						</dd>
 VIAGEM;
 					echo $htmlViagem;

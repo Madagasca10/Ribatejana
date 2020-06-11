@@ -4,7 +4,7 @@
     
   
     unset ( $_SESSION['destino'] );
-    unset ( $_SESSION['voo'] );
+    unset ( $_SESSION['viagem'] );
     unset ( $_SESSION['primeiroNome']  );
     unset ( $_SESSION['ultimoNome']  );
     

@@ -1,10 +1,11 @@
 <?php
 	
+	session_start();
+	
 	include 'acessoDados.php';
 
 	$destinos = getDestinos();
 
-	session_start();
 
 	if( isset($_SESSION['destino']) )
 	{

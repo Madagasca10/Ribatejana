@@ -24,18 +24,18 @@
 			$ultimoNome = $_SESSION['ultimoNome'];	
 		}
 
-		$codigoVoo = $_SESSION['codigoVoo']; 
+		$codigoViagem = $_SESSION['codigoViagem']; 
 		
 	}
 
 	include 'acessoDados.php';
 
-	$voo = getViagem($codigoViagem);
+	$viagem = getViagem($codigoViagem);
 
-	$origem = $voo['origem'];
-	$destino = $voo['destino'];
-	$horaPartida = $voo['horaPartida'];
-	$horaChegada = $voo['horaChegada'];
+	$origem = $viagem['origem'];
+	$destino = $viagem['destino'];
+	$horaPartida = $viagem['horaPartida'];
+	$horaChegada = $viagem['horaChegada'];
 
 	include 'header.php';
 
